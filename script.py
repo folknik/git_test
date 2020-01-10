@@ -5,6 +5,7 @@ class Numbers(object):
         self.b = b
         self.sum = a + b
         self.mult = a * b
+        self.div = a / b
 
     @property
     def summ(self):
@@ -14,8 +15,13 @@ class Numbers(object):
     def multiple(self):
         return self.mult
 
+    @property
+    def division(self):
+        return self.div
+
 
 if __name__ == '__main__':
     s = Numbers(10, 15)
     print(s.summ)
     print(s.multiple)
+    print(s.division)
