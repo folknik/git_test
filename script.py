@@ -22,7 +22,11 @@ class Numbers(object):
 
 if __name__ == '__main__':
     a = 10.0
-    b= 15.0
-    s = Numbers(a, b)
-    print("Numbers: {} and {}".format(a, b))
-    print("Sum: {}, mult: {}, div: {}".format(s.summ, s.multiple, s.division))
+    b = 15.0
+
+    if b == 0:
+        print("Unfortunately, b = 0")
+    else:
+        s = Numbers(a, b)
+        print("Numbers: {} and {}".format(a, b))
+        print("Sum: {}, mult: {}, div: {}".format(s.summ, s.multiple, s.division))
