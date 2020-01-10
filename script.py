@@ -21,7 +21,8 @@ class Numbers(object):
 
 
 if __name__ == '__main__':
-    s = Numbers(10, 15)
-    print(s.summ)
-    print(s.multiple)
-    print(s.division)
+    a = 10.0
+    b= 15.0
+    s = Numbers(a, b)
+    print("Numbers: {} and {}".format(a, b))
+    print("Sum: {}, mult: {}, div: {}".format(s.summ, s.multiple, s.division))
