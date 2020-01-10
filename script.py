@@ -1,3 +1,7 @@
+import sys
+
+num1, num2 = float(sys.argv[1]), float(sys.argv[2])
+
 class Numbers(object):
 
     def __init__(self, a, b):
@@ -21,12 +25,9 @@ class Numbers(object):
 
 
 if __name__ == '__main__':
-    a = 10.0
-    b = 15.0
-
-    if b == 0:
+    if num2 == 0:
         print("Unfortunately, b = 0")
     else:
-        s = Numbers(a, b)
-        print("Numbers: {} and {}".format(a, b))
+        s = Numbers(num1, num2)
+        print("Numbers: {} and {}".format(num1, num2))
         print("Sum: {}, mult: {}, div: {}".format(s.summ, s.multiple, s.division))
