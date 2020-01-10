@@ -4,12 +4,25 @@ class Numbers(object):
         self.a = a
         self.b = b
         self.sum = a + b
+        self.mult = a * b
+        self.div = a / b
 
     @property
     def summ(self):
         return self.sum
 
+    @property
+    def multiple(self):
+        return self.mult
+
+    @property
+    def division(self):
+        return self.div
+
 
 if __name__ == '__main__':
-    s = Numbers(10, 15)
-    print(s.summ)
+    a = 10.0
+    b= 15.0
+    s = Numbers(a, b)
+    print("Numbers: {} and {}".format(a, b))
+    print("Sum: {}, mult: {}, div: {}".format(s.summ, s.multiple, s.division))
